@@ -15,8 +15,14 @@ app.get("/", async () => ({
 
 async function main() {
   if (process.env.NODE_ENV === "production") {
+    await bot.init();
+
     app.post("/webhook", async (request, reply) => {
-      await bot.handleUpdate(request.body as any);
+      try {
+        await bot.handleUpdate(request.body as any);
+      } catch (error) {
+        console.error("Webhook update failed:", error);
+      }
       return reply.send("ok");
     });
 
