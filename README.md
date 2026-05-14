@@ -130,7 +130,7 @@ Every AI-generated insight is keccak256-hashed and written on-chain through `log
 - [ ] Bot live and public - [t.me/mantlepulse_bot](https://t.me/mantlepulse_bot)
 - [ ] Railway URL - `<<RAILWAY_URL>>`
 - [ ] Demo video >= 2 min - `<<VIDEO_LINK>>`
-- [ ] GitHub repo public - `<<GITHUB_URL>>`
+- [x] GitHub repo public - [https://github.com/0xchukss/mantle-pulse](https://github.com/0xchukss/mantle-pulse)
 - [ ] DoraHacks submission complete
 
 One-line pitch:
