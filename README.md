@@ -11,7 +11,7 @@ Tagline: Real-time alpha signals from Mantle's on-chain activity.
 ```text
 Telegram User
     ↓ command
-Grammy Bot (Railway)
+Grammy Bot (Render)
     ↓             ↓
 Gemini Flash  Mantle RPC + Subgraph
     ↓
@@ -32,7 +32,7 @@ Insight logged on-chain
 | AI | Google Gemini 2.5 Flash |
 | On-chain data | Mantle RPC + Goldsky subgraph |
 | Scheduler | node-cron |
-| Deployment | Railway |
+| Deployment | Render |
 
 ## Commands
 
@@ -97,14 +97,15 @@ Deployed contract address: `0x8C78a2d13088EABEcEfe0886E5106046F81dAC03`
 
 Explorer link: [https://explorer.sepolia.mantle.xyz/address/0x8C78a2d13088EABEcEfe0886E5106046F81dAC03](https://explorer.sepolia.mantle.xyz/address/0x8C78a2d13088EABEcEfe0886E5106046F81dAC03)
 
-## Railway Deploy
+## Render Deploy
 
 1. Push this repo to GitHub.
-2. Create a Railway project from the GitHub repo.
-3. Add all `.env` values in Railway.
-4. Set `NODE_ENV=production`.
-5. Set `TELEGRAM_WEBHOOK_URL` to the Railway HTTPS URL.
-6. Redeploy. The app registers `/webhook` automatically.
+2. In Render, choose **New +** -> **Blueprint** and connect this repo, or choose **Web Service** and use the commands below.
+3. Build command: `npm ci && npm run build`
+4. Start command: `npm start`
+5. Add the secret env vars from `.env`: `TELEGRAM_BOT_TOKEN`, `DEPLOYER_PRIVATE_KEY`, `GEMINI_API_KEY`, and optionally `ALERT_CHAT_ID`.
+6. Set `TELEGRAM_WEBHOOK_URL` to the Render HTTPS URL, for example `https://mantlepulse.onrender.com`.
+7. Redeploy. The app registers `/webhook` automatically.
 
 The root route returns a small JSON health check, and Telegram updates are handled at `/webhook`.
 
@@ -128,7 +129,7 @@ Every AI-generated insight is keccak256-hashed and written on-chain through `log
 - [ ] Contract verified on Mantle Explorer - explorer API returned HTML during Hardhat verification
 - [x] `logInsight()` tested - example tx: [0xa649e244714bdd1094eb2e5b2a0ccdca699b479bb7681d42a6164e4092f7c6db](https://explorer.sepolia.mantle.xyz/tx/0xa649e244714bdd1094eb2e5b2a0ccdca699b479bb7681d42a6164e4092f7c6db)
 - [ ] Bot live and public - [t.me/mantlepulse_bot](https://t.me/mantlepulse_bot)
-- [ ] Railway URL - `<<RAILWAY_URL>>`
+- [ ] Render URL - `<<RENDER_URL>>`
 - [ ] Demo video >= 2 min - `<<VIDEO_LINK>>`
 - [x] GitHub repo public - [https://github.com/0xchukss/mantle-pulse](https://github.com/0xchukss/mantle-pulse)
 - [ ] DoraHacks submission complete
