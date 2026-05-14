@@ -93,9 +93,9 @@ npm run deploy:mainnet
 
 After deployment, put the printed contract address in `CONTRACT_ADDRESS`.
 
-Deployed contract address: `<<FILL_AFTER_DEPLOY>>`
+Deployed contract address: `0x8C78a2d13088EABEcEfe0886E5106046F81dAC03`
 
-Explorer link: `<<FILL_AFTER_DEPLOY>>`
+Explorer link: [https://explorer.sepolia.mantle.xyz/address/0x8C78a2d13088EABEcEfe0886E5106046F81dAC03](https://explorer.sepolia.mantle.xyz/address/0x8C78a2d13088EABEcEfe0886E5106046F81dAC03)
 
 ## Railway Deploy
 
@@ -124,9 +124,9 @@ Every AI-generated insight is keccak256-hashed and written on-chain through `log
 
 ## Submission Checklist
 
-- [ ] Contract deployed - address: `<<CONTRACT_ADDRESS>>`
-- [ ] Contract verified on Mantle Explorer - `<<EXPLORER_LINK>>`
-- [ ] `logInsight()` tested - example tx: `<<TX_HASH>>`
+- [x] Contract deployed - address: `0x8C78a2d13088EABEcEfe0886E5106046F81dAC03`
+- [ ] Contract verified on Mantle Explorer - explorer API returned HTML during Hardhat verification
+- [x] `logInsight()` tested - example tx: [0xa649e244714bdd1094eb2e5b2a0ccdca699b479bb7681d42a6164e4092f7c6db](https://explorer.sepolia.mantle.xyz/tx/0xa649e244714bdd1094eb2e5b2a0ccdca699b479bb7681d42a6164e4092f7c6db)
 - [ ] Bot live and public - [t.me/mantlepulse_bot](https://t.me/mantlepulse_bot)
 - [ ] Railway URL - `<<RAILWAY_URL>>`
 - [ ] Demo video >= 2 min - `<<VIDEO_LINK>>`
