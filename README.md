@@ -128,8 +128,8 @@ Every AI-generated insight is keccak256-hashed and written on-chain through `log
 - [x] Contract deployed - address: `0x8C78a2d13088EABEcEfe0886E5106046F81dAC03`
 - [ ] Contract verified on Mantle Explorer - explorer API returned HTML during Hardhat verification
 - [x] `logInsight()` tested - example tx: [0xa649e244714bdd1094eb2e5b2a0ccdca699b479bb7681d42a6164e4092f7c6db](https://explorer.sepolia.mantle.xyz/tx/0xa649e244714bdd1094eb2e5b2a0ccdca699b479bb7681d42a6164e4092f7c6db)
-- [ ] Bot live and public - [t.me/mantlepulse_bot](https://t.me/mantlepulse_bot)
-- [ ] Render URL - `<<RENDER_URL>>`
+- [x] Bot live and public - [t.me/mantlepulse_bot](https://t.me/mantlepulse_bot)
+- [x] Render URL - [https://mantlepulse.onrender.com](https://mantlepulse.onrender.com)
 - [ ] Demo video >= 2 min - `<<VIDEO_LINK>>`
 - [x] GitHub repo public - [https://github.com/0xchukss/mantle-pulse](https://github.com/0xchukss/mantle-pulse)
 - [ ] DoraHacks submission complete
