@@ -2,12 +2,12 @@
   "name": "mantle-pulse",
   "version": "1.0.0",
   "description": "AI-powered Mantle smart money Telegram bot",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "type": "commonjs",
   "scripts": {
     "dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "node dist/src/index.js",
     "compile": "hardhat compile",
     "deploy:testnet": "hardhat run scripts/deploy.ts --network mantle_testnet",
     "deploy:mainnet": "hardhat run scripts/deploy.ts --network mantle_mainnet"
